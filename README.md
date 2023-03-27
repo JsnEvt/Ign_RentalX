@@ -59,38 +59,38 @@ Deve ser possível cadastrar um aluguel
 O aluguel deve ter duração mínima de 24 horas.
 Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo usuário.
 Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo carro.
-O usuario deve estar logado na aplicacao.
-Ao realizar um aluguel, o status do carro devera ser alterado para indisponivel.
+O usuário deve estar logado na aplicação.
+Ao realizar um aluguel, o status do carro deverá ser alterado para indisponivel.
 
-#Devolucao de carro
+#Devolução de carro
 
 **RF**
-Deve ser possivel realizar a devolucao de um carro
+Deve ser possivel realizar a devolução de um carro
 
 **RN**
-Se o carro for devolvido com menos de 24 horas, devera ser cobrado diaria completa.
-Ao realizar a devolucao, o carro devera ser liberado para outro aluguel.
-Ao realizar a devolucao, o usuario devera ser liberado para outro aluguel.
-Ao realizar a devolucao, devera ser calculado o tota do aluguel.
-Caso o horario de devolucao seja superior ao horario previsto de entrega, devera ser
+Se o carro for devolvido com menos de 24 horas, deverá ser cobrado diária completa.
+Ao realizar a devolução, o carro devera ser liberado para outro aluguel.
+Ao realizar a devolução, o usuário devera ser liberado para outro aluguel.
+Ao realizar a devolução, deverá ser calculado o total do aluguel.
+Caso o horário de devolução seja superior ao horário previsto de entrega, deverá ser
 cobrado multa proporcional aos dias de atraso.
-Caso haja multa, devera ser somado ao total do aluguel.
+Caso haja multa, deverá ser somado ao total do aluguel.
 
-# Listagem de Alugueis para usuario
+# Listagem de Alugueis para usuário
 
 **RF**
-Deve ser possivel realizar a busca de todos os alugueis para o usuario
+Deve ser possível realizar a busca de todos os alugueis para o usuário
 
 **RN**
-O usuario devera estar logado na aplicacao.
+O usuário deverá estar logado na aplicação.
 
 
 # Recuperar a senha
 
 **RF**
-- Dever ser possivel o usuario recuperar a senha informando o email
-- O usuarioo deve receber um e-mail com o passo a passo para a recuperacao da senha
-- O usuario deve conseguir inserir uma nova senha
+- Dever ser possível o usuário recuperar a senha informando o email
+- O usuário deve receber um e-mail com o passo a passo para a recuperação da senha
+- O usuário deve conseguir inserir uma nova senha
 
 **RN**
 - O usuario precisa informar uma nova senha
