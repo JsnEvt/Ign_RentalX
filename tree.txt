@@ -1,0 +1,245 @@
+RentALX
+    ├── .vscode
+    │   └── launch.json
+    ├── coverage
+    │   ├── lcov-report
+    │   │   ├── base.css
+    │   │   ├── block-navigation.js
+    │   │   ├── favicon.png
+    │   │   ├── index.html
+    │   │   ├── prettify.css
+    │   │   ├── prettify.js
+    │   │   ├── sort-arrow-sprite.png
+    │   │   └── sorter.js
+    │   └── lcov.info
+    ├── src
+    │   ├── @types
+    │   │   └── express
+    │   │       └── index.d.ts
+    │   ├── config
+    │   │   ├── auth.ts
+    │   │   └── upload.ts
+    │   ├── modules
+    │   │   ├── accounts
+    │   │   │   ├── dtos
+    │   │   │   │   ├── ICreateUserDTO.ts
+    │   │   │   │   ├── ICreateUserTokenDTO.ts
+    │   │   │   │   └── IUserResponseDTO.ts
+    │   │   │   ├── infra
+    │   │   │   │   └── typeorm
+    │   │   │   │       ├── entities
+    │   │   │   │       │   ├── User.ts
+    │   │   │   │       │   └── UserTokens.ts
+    │   │   │   │       └── repositories
+    │   │   │   │           ├── UsersRepository.ts
+    │   │   │   │           └── UsersTokensRepository.ts
+    │   │   │   ├── mapper
+    │   │   │   │   └── UserMap.ts
+    │   │   │   ├── repositories
+    │   │   │   │   ├── in-memory
+    │   │   │   │   │   ├── UsersRepositoryInMemory.ts
+    │   │   │   │   │   └── UsersTokensRepositoryInMemory.ts
+    │   │   │   │   ├── IUsersRepository.ts
+    │   │   │   │   └── IUsersTokensRepository.ts
+    │   │   │   ├── useCases
+    │   │   │   │   ├── authenticateUser
+    │   │   │   │   │   ├── AuthenticateUserController.ts
+    │   │   │   │   │   ├── AuthenticateUserUseCase.spec.ts
+    │   │   │   │   │   └── AuthenticateUserUseCase.ts
+    │   │   │   │   ├── createUser
+    │   │   │   │   │   ├── CreateUserController.ts
+    │   │   │   │   │   └── CreateUserUseCase.ts
+    │   │   │   │   ├── profileUserUseCase
+    │   │   │   │   │   ├── ProfileUserController.ts
+    │   │   │   │   │   └── ProfileUserUseCase.ts
+    │   │   │   │   ├── refreshToken
+    │   │   │   │   │   ├── RefreshTokenController.ts
+    │   │   │   │   │   └── RefreshTokenUseCase.ts
+    │   │   │   │   ├── resetPasswordUser
+    │   │   │   │   │   ├── ResetPasswordUserController.ts
+    │   │   │   │   │   └── ResetPasswordUserUseCase.ts
+    │   │   │   │   ├── sendForgotPasswordMail
+    │   │   │   │   │   ├── SendForgotPasswordMailController.ts
+    │   │   │   │   │   ├── SendForgotPasswordMailUseCase.spec.ts
+    │   │   │   │   │   └── SendForgotPasswordMailUseCase.ts
+    │   │   │   │   └── updateUserAvatar
+    │   │   │   │       ├── UpdateUserAvatarController.ts
+    │   │   │   │       └── UpdateUserAvatarUseCase.ts
+    │   │   │   └── views
+    │   │   │       └── emails
+    │   │   │           └── forgotPassword.hbs
+    │   │   ├── cars
+    │   │   │   ├── dtos
+    │   │   │   │   └── ICreateCarDTO.ts
+    │   │   │   ├── infra
+    │   │   │   │   └── typeorm
+    │   │   │   │       ├── entities
+    │   │   │   │       │   ├── Car.ts
+    │   │   │   │       │   ├── CarImage.ts
+    │   │   │   │       │   ├── Category.ts
+    │   │   │   │       │   └── Specification.ts
+    │   │   │   │       └── repositories
+    │   │   │   │           ├── CarsImagesRepository.ts
+    │   │   │   │           ├── CarsRepository.ts
+    │   │   │   │           ├── CategoriesRepository.ts
+    │   │   │   │           ├── ICarImagesRepository.ts
+    │   │   │   │           ├── ICategoriesRepository.ts
+    │   │   │   │           ├── ISpecificationRepository.ts
+    │   │   │   │           └── SpecificationRepository.ts
+    │   │   │   ├── repositories
+    │   │   │   │   ├── in-memory
+    │   │   │   │   │   ├── CarsRepositoryInMemory.ts
+    │   │   │   │   │   ├── CategoryRepositoriesInMemory.ts
+    │   │   │   │   │   └── SpecificationsRepositoryInMemory.ts
+    │   │   │   │   └── ICarRepository.ts
+    │   │   │   └── useCases
+    │   │   │       ├── createCar
+    │   │   │       │   ├── CreateCarController.ts
+    │   │   │       │   ├── CreateCarUseCase.spec.ts
+    │   │   │       │   └── CreateCarUseCase.ts
+    │   │   │       ├── createCarSpecification
+    │   │   │       │   ├── CreateCarSpecificationController.ts
+    │   │   │       │   ├── CreateCarSpecificationUseCase.spec.ts
+    │   │   │       │   └── CreateCarSpecificationUseCase.ts
+    │   │   │       ├── createCategory
+    │   │   │       │   ├── CreateCategoryController.spec.ts
+    │   │   │       │   ├── CreateCategoryController.ts
+    │   │   │       │   ├── CreateCategoryUseCase.spec.ts
+    │   │   │       │   └── CreateCategoryUseCase.ts
+    │   │   │       ├── createSpecification
+    │   │   │       │   ├── CreateSpecificationController.ts
+    │   │   │       │   └── CreateSpecificationUseCase.ts
+    │   │   │       ├── importCategory
+    │   │   │       │   ├── ImportCategoryController.ts
+    │   │   │       │   └── ImportCategoryUseCase.ts
+    │   │   │       ├── listAvailableCars
+    │   │   │       │   ├── ListAvailableCarsController.ts
+    │   │   │       │   ├── ListAvailableCarsUseCase.spec.ts
+    │   │   │       │   └── ListAvailableCarsUseCase.ts
+    │   │   │       ├── listCategories
+    │   │   │       │   ├── ListCategoriesController.spec1.ts_
+    │   │   │       │   ├── ListCategoriesController.ts
+    │   │   │       │   └── ListCategoriesUseCase.ts
+    │   │   │       └── uploadCarImages
+    │   │   │           ├── UploadCarImageController.ts
+    │   │   │           └── UploadCarImageUseCase.ts
+    │   │   └── rentals
+    │   │       ├── dtos
+    │   │       │   └── ICreateRentalDTO.ts
+    │   │       ├── infra
+    │   │       │   └── typeorm
+    │   │       │       ├── entities
+    │   │       │       │   └── Rental.ts
+    │   │       │       └── repositories
+    │   │       │           └── RentalsRepository.ts
+    │   │       ├── repositories
+    │   │       │   ├── in-memory
+    │   │       │   │   └── RentalsRepositoryInMemory.ts
+    │   │       │   └── IRentalsRepository.ts
+    │   │       └── useCases
+    │   │           ├── createRental
+    │   │           │   ├── CreateRentalController.ts
+    │   │           │   ├── CreateRentalUseCase.spec.ts
+    │   │           │   └── CreateRentalUseCase.ts
+    │   │           ├── devolutionRental
+    │   │           │   ├── DevolutionRentalController.ts
+    │   │           │   └── DevolutionRentalUseCase.ts
+    │   │           └── listRentalsByUser
+    │   │               ├── ListRentalsByUserController.ts
+    │   │               └── ListRentalsByUserUseCase.ts
+    │   ├── shared
+    │   │   ├── container
+    │   │   │   ├── providers
+    │   │   │   │   ├── DateProvider
+    │   │   │   │   │   ├── Implementations
+    │   │   │   │   │   │   └── DayjsDateProvider.ts
+    │   │   │   │   │   ├── IDateProvider.ts
+    │   │   │   │   │   └── index.ts
+    │   │   │   │   ├── MailProvider
+    │   │   │   │   │   ├── implementations
+    │   │   │   │   │   │   ├── EtherealMailProvider.ts
+    │   │   │   │   │   │   └── SESMailProvider.ts
+    │   │   │   │   │   ├── in-memory
+    │   │   │   │   │   │   └── MailProviderInMemory.ts
+    │   │   │   │   │   ├── IMailProvider.ts
+    │   │   │   │   │   └── index.ts
+    │   │   │   │   ├── StorageProvider
+    │   │   │   │   │   ├── implementations
+    │   │   │   │   │   │   ├── LocalStorageProvider.ts
+    │   │   │   │   │   │   └── S3StorageProvider.ts
+    │   │   │   │   │   ├── index.ts
+    │   │   │   │   │   └── IStorageProvider.ts
+    │   │   │   │   └── index.ts
+    │   │   │   └── index.ts
+    │   │   ├── errors
+    │   │   │   └── AppError.ts
+    │   │   └── infra
+    │   │       ├── http
+    │   │       │   ├── middlewares
+    │   │       │   │   ├── ensureAdmin.ts
+    │   │       │   │   └── ensureAuthenticated.ts
+    │   │       │   ├── routes
+    │   │       │   │   ├── authenticate.routes.ts
+    │   │       │   │   ├── car.routes.ts
+    │   │       │   │   ├── categories.routes.ts
+    │   │       │   │   ├── index.ts
+    │   │       │   │   ├── password.routes.ts
+    │   │       │   │   ├── rental.routes.ts
+    │   │       │   │   ├── specifications.routes.ts
+    │   │       │   │   └── user.routes.ts
+    │   │       │   ├── app.ts
+    │   │       │   └── server.ts
+    │   │       └── typeorm
+    │   │           ├── migrations
+    │   │           │   ├── 1668102542717-CreateCategories.ts
+    │   │           │   ├── 1668255542839-CreateSpecifications.ts
+    │   │           │   ├── 1668452277203-AlterUserDeleteUsername.ts
+    │   │           │   ├── 1668512575546-AlterUserAddAvatar.ts
+    │   │           │   ├── 1668623609029-CreateCars.ts
+    │   │           │   ├── 1668716648836-CreateSpecificationsCars.ts
+    │   │           │   ├── 1668772215938-CreateCarImages.ts
+    │   │           │   ├── 1668862130961-add_update_users_id.ts
+    │   │           │   ├── 1668862535232-CarRentals.ts
+    │   │           │   └── 1669227255982-CreateUsersToken.ts
+    │   │           ├── seed
+    │   │           │   └── admin.ts
+    │   │           └── index.ts
+    │   ├── utils
+    │   │   └── file.ts
+    │   └── swagger.json
+    ├── tmp
+    │   ├── avatar
+    │   │   ├── avatar_original.png
+    │   │   └── tabela_rentalx.jpg
+    │   ├── cars
+    │   │   ├── 061c1147daec7240604aeb90648ee3ab-golf97_2.jfif
+    │   │   ├── 1ec14325c5c5ee435b87824676b99dc7-golf97.jpg
+    │   │   ├── 3c3fe328d7a0e9c4c61cc1b77f339439-hilux-fechada1.jpg
+    │   │   ├── 7b9d8941d40f90ddc8da2e9617aaed3e-golf97_2.jfif
+    │   │   ├── a04dacd6cd92d54d25f903c9ddebec67-hilux-fechada2.jpg
+    │   │   ├── ae14bf18ae9863c38ea695eb2be14991-golf97.jpg
+    │   │   ├── golf97_2.jfif
+    │   │   ├── golf97.jpg
+    │   │   ├── hilux-fechada1.jpg
+    │   │   └── hilux-fechada2.jpg
+    │   └── 0a67702bcce112ca946f44717cb8999e
+    ├── .dockerignore
+    ├── .editorconfig
+    ├── .env_example
+    ├── .eslintignore
+    ├── .eslintrc.json
+    ├── .gitignore
+    ├── arq.csv
+    ├── babel.config.js
+    ├── Comandos DEPLOY.docx
+    ├── docker-compose.yml
+    ├── Dockerfile
+    ├── jest.config.ts
+    ├── ormconfig.json
+    ├── package-lock.json
+    ├── package.json
+    ├── prettier.config.js
+    ├── README.txt
+    ├── tsconfig.json
+    ├── yarn-error.log
+    └── yarn.lock
