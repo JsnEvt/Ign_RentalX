@@ -231,6 +231,9 @@ yarn test:coverage
 
 ---
 
+## 📂 Estrutura do Projeto
+A estrutura completa pode ser vista em [tree.txt](./tree.txt).
+
 ## 🎯 Padrões de Código
 
 * **ESLint** + **Prettier** + **EditorConfig**.
