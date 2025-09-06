@@ -9,22 +9,21 @@
 * [Visão Geral](#-visão-geral)
 * [Principais Recursos](#-principais-recursos)
 * [Arquitetura & Padrões](#-arquitetura--padrões)
+* [Estrutura de Pastas](#-estrutura-de-pastas)
 * [Domínios / Módulos](#-domínios--módulos)
 * [Fluxos Importantes](#-fluxos-importantes)
 * [Erros & Validações](#-erros--validações)
 * [Autenticação & Autorização](#-autenticação--autorização)
 * [ORM & Banco de Dados](#-orm--banco-de-dados)
 * [Middlewares](#-middlewares)
-* [Rotas & Versionamento](#-rotas--versionamento)
 * [Providers (Data, Token, Storage, Mail)](#-providers-data-token-storage-mail)
 * [Documentação com Swagger](#-documentação-com-swagger)
-* [Execução com Docker](#-execução-com-docker)
 * [Configuração de Ambiente](#-configuração-de-ambiente)
-* [Scripts NPM/Yarn](#-scripts-npmyarn)
 * [Testes](#-testes)
+* [Scripts NPM/Yarn](#-scripts-npmyarn)
 * [Padrões de Código](#-padrões-de-código)
-* [Como Contribuir](#-como-contribuir)
 * [Licença](#-licença)
+
 
 ---
 
@@ -230,9 +229,6 @@ yarn test:coverage
 ```
 
 ---
-
-## 📂 Estrutura do Projeto
-A estrutura completa pode ser vista em [tree.txt](./tree.txt).
 
 ## 🎯 Padrões de Código
 
