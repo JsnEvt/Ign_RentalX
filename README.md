@@ -241,5 +241,11 @@ yarn test:coverage
 Este projeto está sob a licença [MIT](./LICENSE).
 
 ---
+## 📝 Créditos
+
+Este projeto foi desenvolvido no curso **Ignite** da **Rocketseat**, com orientação da professora **Daniela Evangelista**.
+
+
+
 
 
