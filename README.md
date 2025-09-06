@@ -23,6 +23,7 @@
 * [Scripts NPM/Yarn](#-scripts-npmyarn)
 * [Padrões de Código](#-padrões-de-código)
 * [Licença](#-licença)
+* [Créditos](#-creditos)
 
 
 ---
