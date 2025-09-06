@@ -10,20 +10,21 @@
 * [Principais Recursos](#-principais-recursos)
 * [Arquitetura & Padrões](#-arquitetura--padrões)
 * [Estrutura de Pastas](#-estrutura-de-pastas)
-* [Domínios / Módulos](#-domínios--módulos)
+* [Domínios / Módulos](#-domínios--modulos)
 * [Fluxos Importantes](#-fluxos-importantes)
-* [Erros & Validações](#-erros--validações)
-* [Autenticação & Autorização](#-autenticação--autorização)
+* [Erros & Validações](#-erros--validacoes)
+* [Autenticação & Autorização](#-autenticacao--autorizacao)
 * [ORM & Banco de Dados](#-orm--banco-de-dados)
 * [Middlewares](#-middlewares)
 * [Providers (Data, Token, Storage, Mail)](#-providers-data-token-storage-mail)
-* [Documentação com Swagger](#-documentação-com-swagger)
-* [Configuração de Ambiente](#-configuração-de-ambiente)
+* [Documentação com Swagger](#-documentacao-com-swagger)
+* [Configuração de Ambiente](#-configuracao-de-ambiente)
 * [Testes](#-testes)
 * [Scripts NPM/Yarn](#-scripts-npmyarn)
-* [Padrões de Código](#-padrões-de-código)
-* [Licença](#-licença)
+* [Padrões de Código](#-padroes-de-codigo)
+* [Licença](#-licenca)
 * [Créditos](#-creditos)
+
 
 
 ---
