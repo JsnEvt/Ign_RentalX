@@ -6,25 +6,24 @@
 
 ## 🔖 Sumário
 
-* [Visão Geral](#-visão-geral)
+* [Visão Geral](#-visao-geral)
 * [Principais Recursos](#-principais-recursos)
-* [Arquitetura & Padrões](#-arquitetura--padrões)
+* [Arquitetura e Padroes](#-arquitetura--padroes)
 * [Estrutura de Pastas](#-estrutura-de-pastas)
-* [Domínios / Módulos](#-domínios--modulos)
+* [Dominios / Modulos](#-dominios--modulos)
 * [Fluxos Importantes](#-fluxos-importantes)
-* [Erros & Validações](#-erros--validacoes)
-* [Autenticação & Autorização](#-autenticacao--autorizacao)
-* [ORM & Banco de Dados](#-orm--banco-de-dados)
+* [Erros e Validacoes](#-erros--validacoes)
+* [Autenticacao e Autorizacao](#-autenticacao--autorizacao)
+* [ORM e Banco de Dados](#-orm--banco-de-dados)
 * [Middlewares](#-middlewares)
 * [Providers (Data, Token, Storage, Mail)](#-providers-data-token-storage-mail)
-* [Documentação com Swagger](#-documentacao-com-swagger)
-* [Configuração de Ambiente](#-configuracao-de-ambiente)
+* [Documentacao com Swagger](#-documentacao-com-swagger)
+* [Configuracao de Ambiente](#-configuracao-de-ambiente)
 * [Testes](#-testes)
 * [Scripts NPM/Yarn](#-scripts-npmyarn)
-* [Padrões de Código](#-padroes-de-codigo)
-* [Licença](#-licenca)
+* [Padroes de Codigo](#-padroes-de-codigo)
+* [Licenca](#-licenca)
 * [Créditos](#-creditos)
-
 
 
 ---
